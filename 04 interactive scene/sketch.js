@@ -12,12 +12,13 @@ function setup() {
 
 function scene(){
   fill(252, 186, 3)
-  circle(110,110,90)
+  circle(movedX,movedY,90)
   fill(0,100,0)
   rect(0, 400, 500, 200)
   triangle(130,375,230,375,180,250)
   fill(133, 124, 99)
   rect(170,400,25,-25)
+
 }
 
 function displayMouse(){
@@ -26,6 +27,7 @@ function displayMouse(){
   fill(0,0,0);
   text(mouseX + "," + mouseY,    mouseX, mouseY);
 }
+
 
 
 function draw() {
