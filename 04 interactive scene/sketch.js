@@ -42,7 +42,7 @@ function daynightcycle(){
   }
 }
 
-function theguy(){
+function theguy(){ //its THE guy, or atleast the protag for the assignment
   if (suny < 200){ // guy is outside
     fill(30, 105, 227)
     rect(250,375,25,25)
@@ -56,6 +56,9 @@ function theguy(){
   }
 }
 
+function waterfart(){ //watermart, i mean the marterwark, i mean the marterfark, i mean the watermark
+  text("Made by Iskander Baizrakhman")
+}
 function displayMouse(){
   textSize(40);
   textAlign(LEFT, TOP)
