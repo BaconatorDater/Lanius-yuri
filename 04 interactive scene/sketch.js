@@ -1,9 +1,9 @@
-// Project Title
-// Your Name
-// Date
+// Day & night cycle in JS
+// Iskander Baizrakhman
+// 2/12/2026
 //
 // Extra for Experts:
-// - describe what you did to take this project "above and beyond"
+// I made sun and moon tracking, kinda wish that both were more complex tho
 let sunx = 0;
 let suny = 0; //variables for celestial obj. tracking
 let moony = 0;
@@ -14,7 +14,7 @@ function setup() {
 function scene(){
   sunx = mouseX
   suny = mouseY
-  moony = mouseY - 400
+  moony = mouseY - 350
   if (suny < 440){ // do we draw a sun or a moon?
     fill(252, 186, 3)
     circle(sunx,suny,90)
@@ -22,12 +22,13 @@ function scene(){
     fill(255,255,255)
     circle(sunx,moony,90)
   }
-  fill(0,100,0)
+  fill(0,100,0) //other thingamajings for the background
   rect(0, 400, 500, 200)
   triangle(130,375,230,375,180,250)
   fill(133, 124, 99)
   rect(170,400,25,-25)
-
+  fill(30, 105, 227)
+  rect(300,400,50,100)
 }
 
 function daynightcycle(){
@@ -41,6 +42,20 @@ function daynightcycle(){
   }
 }
 
+function theguy(){
+  if (suny < 200){ // guy is outside
+    fill(30, 105, 227)
+    rect(250,375,25,25)
+    fill(210,161,140)
+    circle(262,370,30)
+  } else if (suny > 200 && suny < 440){ // guy is leaving
+    fill(30, 105, 227)
+    rect(50,375,25,25)
+    fill(210,161,140)
+    circle(62,370,30)
+  }
+}
+
 function displayMouse(){
   textSize(40);
   textAlign(LEFT, TOP)
@@ -50,8 +65,9 @@ function displayMouse(){
 
 
 
-function draw() {
+function draw() { //executes everything
   daynightcycle();
   scene()
   displayMouse()
+  theguy()
 }
