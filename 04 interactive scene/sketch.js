@@ -33,6 +33,7 @@ function scene(){
 
 function daynightcycle(){
   background(220)
+
   if (suny < 200){
     background(44, 142, 212) //day
   } else if (suny > 200 &&  suny < 440){
@@ -57,8 +58,9 @@ function theguy(){ //its THE guy, or atleast the protag for the assignment
 }
 
 function waterfart(){ //watermart, i mean the marterwark, i mean the marterfark, i mean the watermark
-  text("Made by Iskander Baizrakhman")
+  text("Iskander Baizrakhman",50, 450)
 }
+
 function displayMouse(){
   textSize(40);
   textAlign(LEFT, TOP)
@@ -73,4 +75,5 @@ function draw() { //executes everything
   scene()
   displayMouse()
   theguy()
+  waterfart()
 }
