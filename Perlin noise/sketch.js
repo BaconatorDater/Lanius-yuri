@@ -10,6 +10,9 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
 }
 
+function generateTerrain(){
+  
+}
 function draw() {
   background(220);
 }
