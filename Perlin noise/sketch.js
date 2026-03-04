@@ -23,7 +23,6 @@ function generateTerrain(){
   }
 }
 
-fiunction 
 function draw() {
   //locks in this as a starting point (seed 25 from random, the next one will be seed 26, etc.)
   randomSeed(25);
