@@ -10,10 +10,19 @@ function setup() {
   createCanvas(500, 500);
 }
 
-let highestheight = 0
-let highestX = 0
+
+
+
+function falg(x,y){
+  fill(255,0,0)
+  //circle(x,500-y,15)
+  rect(x,500-y,2,15)
+  rect(x,500-y,7,5)
+}
 
 function noiseGen(){
+  let highestheight = 0
+  let highestX = 0
   strokeWeight(rectWidth)
   //using a loop to make a number of rectangles with random height.
   for(let x = 0; x < width; x+=rectWidth){
@@ -29,18 +38,12 @@ function noiseGen(){
       highestX = x
     }
   }
-  fill(0);
-  stroke(0,255,255); strokeWeight(5);
-  line(0,smallestY,width,smallestY);
-  text(smallest, width/2, height/2)
-}
+
+  falg(highestX, highestheight)
 
 
-function falg(){
-  fill(255,0,0)
-  circle(highestX,500-highestheight,15)
-  line(highestX,500-highestheight,highestX,510-highestheight)
 }
+
 
 
 function draw() {
@@ -49,6 +52,6 @@ function draw() {
   //stabilize once per frame.
   background(220);
   noiseGen()
-  falg()
+  //falg()
 
 }
