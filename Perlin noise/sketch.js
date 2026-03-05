@@ -29,6 +29,10 @@ function noiseGen(){
       highestX = x
     }
   }
+  fill(0);
+  stroke(0,255,255); strokeWeight(5);
+  line(0,smallestY,width,smallestY);
+  text(smallest, width/2, height/2)
 }
 
 
