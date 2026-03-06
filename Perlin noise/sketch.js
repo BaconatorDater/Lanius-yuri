@@ -28,6 +28,7 @@ function noiseGen(){
   for(let x = 0; x < width; x+=rectWidth){
     //generate random negative height.
     //replace this with noise()
+    //let rectHeight = random(0, height*0.75);
     let rectHeight = random(0, height*0.75);
 
 

@@ -23,6 +23,12 @@ function drawbubble(){
   }
 }
 
+function eDist(x1,y1,x2,y2){
+  let a = x1-x2;  let b = y1-y2;
+  let c = sqrt(pow(a,2) + pw(b,2));
+  return c.toFixed(1);
+}
+
 function generatePoints(){
   //simple nested loop test to make ordered pairs:
   //x: 0, 30, 60      y:0, 30, 60
