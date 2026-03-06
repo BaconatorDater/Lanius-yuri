@@ -22,6 +22,11 @@ function falg(x,y){
   rect(x,490-y,7,5)
 }
 
+function average(x,y){
+  fill(255,0,0)
+  rect(x,y,500,3)
+}
+
 function noiseGen(){
   let highestheight = 0
   let highestX = 0
@@ -43,7 +48,7 @@ function noiseGen(){
   }
 
   falg(highestX, highestheight)
-
+  average(0, highestheight+375)
 
 }
 
