@@ -1,11 +1,11 @@
-// Project Title
-// Your Name
-// Date
+// Perlin Noise generator
+// Iskander Baizrakhman
+// 3/6/2026
 //
 // Extra for Experts:
 // - describe what you did to take this project "above and beyond"
-
-let rectWidth = 1
+let time = 5;
+let rectWidth = 1;
 function setup() {
   createCanvas(500, 500);
 }
@@ -16,8 +16,8 @@ function setup() {
 function falg(x,y){
   fill(255,0,0)
   //circle(x,500-y,15)
-  rect(x,500-y,2,15)
-  rect(x,500-y,7,5)
+  rect(x,490-y,2,15)
+  rect(x,490-y,7,5)
 }
 
 function noiseGen(){
@@ -29,8 +29,8 @@ function noiseGen(){
     //generate random negative height.
     //replace this with noise()
     //let rectHeight = random(0, height*0.75);
-    let rectHeight = random(0, height*0.75);
-
+    let rectHeight = noise(time) * 100;
+    time += 0.1
 
     rect(x,height,rectWidth,-rectHeight);
     if (rectHeight >= highestheight){
@@ -49,8 +49,9 @@ function noiseGen(){
 
 function draw() {
   //locks in this as a starting point (seed 25 from random, the next one will be seed 26, etc.)
-  randomSeed(26);
-  //stabilize once per frame.
+  //noiseSeed(10);
+  time = 1
+  //stabilizer, still gets random results each frame.
   background(220);
   noiseGen()
   //falg()
