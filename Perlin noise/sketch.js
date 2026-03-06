@@ -6,8 +6,10 @@
 // - describe what you did to take this project "above and beyond"
 let time = 5;
 let rectWidth = 1;
+let canvaswidth = 500;
+let offset = 0;
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(canvaswidth, 500);
 }
 
 
@@ -50,10 +52,14 @@ function noiseGen(){
 function draw() {
   //locks in this as a starting point (seed 25 from random, the next one will be seed 26, etc.)
   //noiseSeed(10);
-  time = 1
+  time = 1 + offset
   //stabilizer, still gets random results each frame.
   background(220);
   noiseGen()
   //falg()
-
+  if (keyIsDown(LEFT_ARROW)){
+    offset -= 0.1
+  } else if (keyIsDown(RIGHT_ARROW)){
+    offset += 0.1
+  }
 }
