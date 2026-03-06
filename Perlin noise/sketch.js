@@ -58,8 +58,8 @@ function draw() {
   noiseGen()
   //falg()
   if (keyIsDown(LEFT_ARROW)){
-    offset -= 0.1
+    offset -= 0.5
   } else if (keyIsDown(RIGHT_ARROW)){
-    offset += 0.1
+    offset += 0.5
   }
 }
