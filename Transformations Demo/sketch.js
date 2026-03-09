@@ -9,10 +9,11 @@ function setup() {
 }
 
 function draw() {
+  //all transformations reset at draw()
   // background(255);
    drawBasicGrid(220);
-
-
+  rectangleBlue(50,50)
+  
   //transformation one: TRANSLATION
 
  
@@ -23,7 +24,11 @@ function draw() {
 
 
   //transformation two: SCALE
-
+  //scale works with respect to Origin.
+  //scale(2.5); //0-1 reduction
+              //1 no change
+              //greater than 1 is enlargement
+  rectangleRed(100,100)
 
 
 
@@ -33,8 +38,9 @@ function draw() {
 
 
   //Combinations of Transformations
-
-  
+  scale(3);
+  face(200,200)
+  rotate(30)
 
 }
 
