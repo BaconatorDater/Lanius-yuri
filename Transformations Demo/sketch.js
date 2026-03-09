@@ -10,7 +10,7 @@ function setup() {
 
 function draw() {
   //all transformations reset at draw()
-  // background(255);
+   background(255);
    drawBasicGrid(220);
   rectangleBlue(50,50)
   
@@ -34,13 +34,22 @@ function draw() {
 
   //transformation three: ROTATION
   //reminder: rotations are measured in radians, not degrees! Functions can help with the conversion...
- 
+  angleMode(DEGREES)
 
 
   //Combinations of Transformations
+  //replace the translate value with the face value
+  //(and vice versa) for funny
+  translate(200,200)
   scale(3);
-  rotate(frameCount*3);
-  face(200,200)
+  rotate(frameCount);
+  //moves the ENTIRE COORDINATE SYSTEM with itself.
+  //TLDR: rotate command rotates around the origin.
+  //Displacing the shape by a set amount from the center
+  //then rotating it, functionally orbiting an invisible point.
+  drawBasicGrid(100)
+  face(0,0)
+  //rotate(frameCount*3);
   let n = 8;
   for(let i =0; i <n; i++){
     line(0,0,75,0);
