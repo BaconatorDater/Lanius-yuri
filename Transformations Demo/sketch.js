@@ -39,8 +39,13 @@ function draw() {
 
   //Combinations of Transformations
   scale(3);
+  rotate(frameCount*3);
   face(200,200)
-  rotate(30)
+  let n = 8;
+  for(let i =0; i <n; i++){
+    line(0,0,75,0);
+    rotate(360/n);
+  }
 
 }
 
