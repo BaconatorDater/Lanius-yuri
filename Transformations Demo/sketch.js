@@ -10,7 +10,7 @@ function setup() {
 
 function draw() {
   // background(255);
-  // drawBasicGrid(220);
+   drawBasicGrid(220);
 
 
   //transformation one: TRANSLATION
