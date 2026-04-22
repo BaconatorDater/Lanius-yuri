@@ -1,9 +1,9 @@
-// Project Title
-// Your Name
-// Date
+// 2d videogame for videogamers
+// Iskander
+// 4/20/2026
 //
 // Extra for Experts:
-// - describe what you did to take this project "above and beyond"
+// This is a project for a simple game where you need to make the whole grid a solid colour.
 //grid needs to be 6 x 5
 
 let grid =[
@@ -18,14 +18,19 @@ let cols = grid[0].length;
 let titleSize = 60;
 
 
+//depreciated.
 function CheckScore(colour){
   return colour === (cols*rows)*255
 }
 
 function setup() {
+  for(let i = 0; i < 10; i++){
+    flip(int(random(0,5)),int(random(0,4)))
+  }
   createCanvas(windowWidth, windowHeight);
 }
 
+//win detection code
 function winsum(){
   let totalsum = 0
   for(let y = 0;y < rows; y++){
@@ -52,6 +57,7 @@ function flip(x,y){
 }
 
 
+//mouse detection
 function mousePressed(){
   if(mouseX < width && mouseY < height){
     let x = getCurrentX();
