@@ -7,7 +7,7 @@
 
 
 let myImage;
-
+let myVideo;
 function preload(){
   //called BEFORE setup, wont conclude untill all loads are complete
     myImage = loadImage("libraries/assets/aviator.png")
@@ -37,14 +37,17 @@ function draw() {
 }
 
 function textImage(){
-  fill(255);
-  let scaleAmount = 50;
+  
+  let scaleAmount = 5;
   textSize(scaleAmount);
 
   for(let x = 0; x < width; x+= scaleAmount){
     for(let y = 0; y < height; y += scaleAmount){
+      fill(0,255,0);
       let avg = getAvg(x,y);
-      if(avg > 100) text("T", x, y);
+      if(avg > 150) text("[]", x, y);
+      if(avg > 100) text("{}", x, y);
+      if(avg > 50) text("()", x, y);
     }
   }
 }
@@ -65,6 +68,7 @@ function getAvg(x,y){
   let r = pixels[index]
   let g = pixels[index+1]
   let b = pixels[index+2]
+  return(r+g+b)/3;
 }
 
 
