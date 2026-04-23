@@ -14,20 +14,39 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(myImage.width, myImage.height);
+  //createCanvas(myImage.width, myImage.height);
+  //pixelDensity(1);
+  createCanvas(640,480);
+  myVideo = createCapture(VIDEO);
   pixelDensity(1);
+  //myvideo.hide();
 }
 
 function draw() {
-  background(220);
-  image(myImage, 0,0);
+  background(0);
+  image(myVideo, 0,0);
 
   //boost()
   loadPixels();
-for(let i = 0; i < 500; i+=4){
-  pixels[i] = 255;
+  background(0);
+  textImage();
+//for(let i = 0; i < 500; i+=4){
+//  pixels[i] = 255;
+//}
+//  updatePixels();
 }
-  updatePixels();
+
+function textImage(){
+  fill(255);
+  let scaleAmount = 50;
+  textSize(scaleAmount);
+
+  for(let x = 0; x < width; x+= scaleAmount){
+    for(let y = 0; y < height; y += scaleAmount){
+      let avg = getAvg(x,y);
+      if(avg > 100) text("T", x, y);
+    }
+  }
 }
 
 function boost(){
@@ -42,9 +61,10 @@ function boost(){
 function getAvg(x,y){
   //return avg intensity of rgb
   //at x, y
-  let r = pixels[i]
-  let g = pixels[i+1]
-  let b = pixels[i+2]
+  let index = ((y*width) + x)*4;
+  let r = pixels[index]
+  let g = pixels[index+1]
+  let b = pixels[index+2]
 }
 
 
@@ -59,7 +79,7 @@ function greyscale(){
 
 function setPixel(x,y,r,g,b){
   //use 1d set pixl with translated numbers
-  for(let i)
+  //ssfor(let i)
   pixels[pos] = r;
   pixels[pos+1] = g;
   pixels[pos+2] = b;
