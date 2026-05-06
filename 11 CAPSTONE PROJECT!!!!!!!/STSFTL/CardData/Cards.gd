@@ -1,7 +1,7 @@
 extends Node2D
 
-@export var CardName: String = "attack"
-@export var CardDescription: String = "Attacks enemy for 10 damage, base cost: 1 energy"
+@export var CardName: String = "Defend"
+@export var CardDescription: String = "Gain 8 block, can be pierced by certain attacks, base cost: 1 energy"
 @export var CardCost: int = 1
 @export var CardImage: Node2D
 
