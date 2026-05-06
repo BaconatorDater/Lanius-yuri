@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://crxr55sg7ymex"]
+
+[ext_resource type="Texture2D" uid="uid://d07hps034kym1" path="res://Assets/Ally_placeholder.webp" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://d0c8so5cq8x7x" path="res://Assets/Enemy_Placeholder.webp" id="2_epypp"]
+
+[node name="Node2D" type="Node2D" unique_id=1277914115]
+position = Vector2(-1, 42)
+
+[node name="Ally1" type="Sprite2D" parent="." unique_id=2107393699]
+position = Vector2(252, 210)
+scale = Vector2(6.34375, 7.34375)
+texture = ExtResource("1_0e48y")
+
+[node name="Enemy1" type="Sprite2D" parent="." unique_id=616207311]
+position = Vector2(773, 209)
+scale = Vector2(5.0625, 5.46875)
+texture = ExtResource("2_epypp")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=111746231]
+position = Vector2(576, 249)
+
+[node name="Control" type="Control" parent="." unique_id=718452695]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Atkbaisic" type="Button" parent="Control" unique_id=405189048]
+layout_mode = 0
+offset_left = 391.0
+offset_top = 403.0
+offset_right = 491.0
+offset_bottom = 571.0
+
+[node name="Defbaisic" type="Button" parent="Control" unique_id=1725856111]
+layout_mode = 0
+offset_left = 519.0
+offset_top = 413.0
+offset_right = 623.0
+offset_bottom = 579.0
+
+[node name="Button3" type="Button" parent="Control" unique_id=935159158]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0

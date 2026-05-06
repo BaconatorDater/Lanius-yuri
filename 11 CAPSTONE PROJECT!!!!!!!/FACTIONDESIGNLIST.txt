@@ -1,0 +1,7 @@
+Factions for a preview:
+Defensive hostiles:
+Focus on high defense potential, lower time to kill
+Offensive hostiles:
+Focus on offense, low time to kill, dont have much defensive skills.
+Saboteur faction:
+Applies debuffs and attacks with middle time to kill and defensive potential.
