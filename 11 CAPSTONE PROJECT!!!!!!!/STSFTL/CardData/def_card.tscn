@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b1k60x4a60amj"]
 
-[ext_resource type="Script" uid="uid://dulgin3qte6lu" path="res://CardData/Cards.gd" id="1_3d68n"]
+[ext_resource type="Script" uid="uid://bih7580ahcofr" path="res://CardData/DefBaisic.gd" id="1_3d68n"]
 [ext_resource type="Texture2D" uid="uid://0ao6yjm2isyx" path="res://Assets/Sprite-0001.webp" id="2_frhuu"]
 
 [node name="DefCard" type="Node2D" unique_id=84739018]

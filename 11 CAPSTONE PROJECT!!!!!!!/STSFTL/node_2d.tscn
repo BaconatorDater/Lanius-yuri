@@ -2,11 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://d07hps034kym1" path="res://Assets/Ally_placeholder.webp" id="1_0e48y"]
 [ext_resource type="Texture2D" uid="uid://d0c8so5cq8x7x" path="res://Assets/Enemy_Placeholder.webp" id="2_epypp"]
-[ext_resource type="Script" uid="uid://dulgin3qte6lu" path="res://CardData/Cards.gd" id="3_epypp"]
-[ext_resource type="Texture2D" uid="uid://0ao6yjm2isyx" path="res://Assets/Sprite-0001.webp" id="4_0hol4"]
-[ext_resource type="Texture2D" uid="uid://iex0j0e1fkbd" path="res://Assets/Defplaceholder.webp" id="5_q6r6c"]
 
-[node name="Node2D" type="Node2D" unique_id=1277914115]
+[node name="Foight" type="Node2D" unique_id=1277914115]
 
 [node name="Ally1" type="Sprite2D" parent="." unique_id=2107393699]
 position = Vector2(252, 210)
@@ -20,20 +17,3 @@ texture = ExtResource("2_epypp")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=111746231]
 position = Vector2(576, 249)
-
-[node name="CardSlot1" type="Node2D" parent="." unique_id=1418456277]
-position = Vector2(425, 438)
-script = ExtResource("3_epypp")
-
-[node name="CardBase" type="Sprite2D" parent="CardSlot1" unique_id=1257741246]
-position = Vector2(0, 1)
-scale = Vector2(2.75, 4.5625)
-texture = ExtResource("4_0hol4")
-
-[node name="CardSlot2" type="Node2D" parent="." unique_id=1855013136]
-position = Vector2(546, 434)
-
-[node name="CardBase2" type="Sprite2D" parent="CardSlot2" unique_id=56665592]
-position = Vector2(-1, 0)
-scale = Vector2(3.0625, 3.84375)
-texture = ExtResource("5_q6r6c")

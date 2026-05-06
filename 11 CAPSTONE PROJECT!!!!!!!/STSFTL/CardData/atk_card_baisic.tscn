@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://blfvoodbk8dye"]
 
-[ext_resource type="Script" uid="uid://dulgin3qte6lu" path="res://CardData/Cards.gd" id="1_xje32"]
+[ext_resource type="Script" uid="uid://c518m6yx5atlc" path="res://CardData/AtkBaisic.gd" id="1_xje32"]
 [ext_resource type="Texture2D" uid="uid://0ao6yjm2isyx" path="res://Assets/Sprite-0001.webp" id="2_rshbq"]
 
 [node name="AtkCard" type="Node2D" unique_id=1595063876]
