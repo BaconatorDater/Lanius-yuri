@@ -27,19 +27,25 @@ offset_bottom = 40.0
 
 [node name="Atkbaisic" type="Button" parent="Control" unique_id=405189048]
 layout_mode = 0
-offset_left = 391.0
-offset_top = 403.0
-offset_right = 491.0
-offset_bottom = 571.0
+offset_left = 340.0
+offset_top = 375.0
+offset_right = 478.0
+offset_bottom = 599.0
+text = "Attack
+Deal 10 Damage."
 
 [node name="Defbaisic" type="Button" parent="Control" unique_id=1725856111]
 layout_mode = 0
-offset_left = 519.0
-offset_top = 413.0
+offset_left = 503.0
+offset_top = 380.0
 offset_right = 623.0
-offset_bottom = 579.0
+offset_bottom = 603.0
+text = "Defend
+Gain 8 Block"
 
 [node name="Button3" type="Button" parent="Control" unique_id=935159158]
 layout_mode = 0
-offset_right = 8.0
-offset_bottom = 8.0
+offset_left = 646.0
+offset_top = 413.0
+offset_right = 745.0
+offset_bottom = 561.0
