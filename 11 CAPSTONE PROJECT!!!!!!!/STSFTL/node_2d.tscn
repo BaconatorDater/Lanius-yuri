@@ -17,3 +17,5 @@ texture = ExtResource("2_epypp")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=111746231]
 position = Vector2(576, 249)
+
+[node name="Deck" type="Node2D" parent="." unique_id=1440170970]
