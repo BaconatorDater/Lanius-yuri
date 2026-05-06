@@ -2,6 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://d07hps034kym1" path="res://Assets/Ally_placeholder.webp" id="1_0e48y"]
 [ext_resource type="Texture2D" uid="uid://d0c8so5cq8x7x" path="res://Assets/Enemy_Placeholder.webp" id="2_epypp"]
+[ext_resource type="PackedScene" uid="uid://b1k60x4a60amj" path="res://CardData/def_card.tscn" id="3_0hol4"]
+[ext_resource type="PackedScene" uid="uid://blfvoodbk8dye" path="res://CardData/atk_card_baisic.tscn" id="4_q6r6c"]
 
 [node name="Foight" type="Node2D" unique_id=1277914115]
 
@@ -19,3 +21,9 @@ texture = ExtResource("2_epypp")
 position = Vector2(576, 249)
 
 [node name="Deck" type="Node2D" parent="." unique_id=1440170970]
+
+[node name="DefCard" parent="." unique_id=84739018 instance=ExtResource("3_0hol4")]
+position = Vector2(557, 458)
+
+[node name="AtkCard" parent="." unique_id=1595063876 instance=ExtResource("4_q6r6c")]
+position = Vector2(437, 457)

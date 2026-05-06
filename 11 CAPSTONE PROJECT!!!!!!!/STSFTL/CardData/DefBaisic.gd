@@ -4,6 +4,7 @@ extends Node2D
 @export var CardDescription: String = "Gain 8 block, can be pierced by certain attacks, base cost: 1 energy"
 @export var CardCost: int = 1
 @export var CardImage: Node2D
+@export var CardBlock: int = 8
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

@@ -6,10 +6,9 @@
 [node name="AtkCard" type="Node2D" unique_id=1595063876]
 
 [node name="CardSlot1" type="Node2D" parent="." unique_id=1203425011]
-position = Vector2(425, 438)
 script = ExtResource("1_xje32")
 
 [node name="CardBase" type="Sprite2D" parent="CardSlot1" unique_id=1743542342]
-position = Vector2(0, 1)
+position = Vector2(-7.6293945e-06, 0)
 scale = Vector2(2.75, 4.5625)
 texture = ExtResource("2_rshbq")
