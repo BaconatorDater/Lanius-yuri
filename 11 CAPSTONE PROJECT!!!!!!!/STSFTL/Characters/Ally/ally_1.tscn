@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://b85cl17mk0nap"]
+
+[ext_resource type="Texture2D" uid="uid://d07hps034kym1" path="res://Assets/Ally_placeholder.webp" id="1_66ki0"]
+[ext_resource type="Script" uid="uid://dvkkqv5xofwxx" path="res://Characters/Ally/ally_1.gd" id="1_nkj74"]
+
+[node name="Ally1" type="Node2D" unique_id=1370340367]
+script = ExtResource("1_nkj74")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1773568634]
+position = Vector2(4.7683716e-07, 0)
+scale = Vector2(2.9375, 3.21875)
+texture = ExtResource("1_66ki0")

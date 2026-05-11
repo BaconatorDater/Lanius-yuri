@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://b1k60x4a60amj"]
+
+[ext_resource type="Script" uid="uid://bih7580ahcofr" path="res://CardData/DefBaisic.gd" id="1_3d68n"]
+[ext_resource type="Texture2D" uid="uid://iex0j0e1fkbd" path="res://Assets/Defplaceholder.webp" id="2_3d68n"]
+
+[node name="DefCard_baisic" type="Node2D" unique_id=84739018]
+
+[node name="CardDef1" type="Node2D" parent="." unique_id=1457025224]
+script = ExtResource("1_3d68n")
+
+[node name="CardBase" type="Sprite2D" parent="CardDef1" unique_id=782054627]
+position = Vector2(-7.56979e-06, 0)
+scale = Vector2(4.75, 7.882)
+texture = ExtResource("2_3d68n")
+
+[node name="CardName" type="Node2D" parent="CardDef1" unique_id=29109391]
+position = Vector2(0, -75)
+
+[node name="CardName" type="Label" parent="CardDef1/CardName" unique_id=603673384]
+offset_left = -44.0
+offset_top = -11.0
+offset_right = 55.0
+offset_bottom = 12.0
+
+[node name="CardDescription" type="Label" parent="CardDef1" unique_id=2060504229]
+offset_left = -37.0
+offset_top = -14.0
+offset_right = 58.0
+offset_bottom = 99.0
+autowrap_mode = 2
